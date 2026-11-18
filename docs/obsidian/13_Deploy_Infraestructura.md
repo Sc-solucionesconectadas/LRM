@@ -1,5 +1,9 @@
 # Publicación e infraestructura
 
+## 2026-11-18 — Mejoras16–19 publicadas
+
+[[20_Publicacion_Mejoras_LMR]]: commit funcional de81c031cff917e50d0ae13d87f568f015d6ccf1, check GitHub Workers Builds completed/success, build4ccf918c-08a8-41b2-ae6c-96fa7b42cad4. URL https://lmr-demo.scsolucionesconectadas.com.ar/ confirmada:84 recursos/diez casos responsive y navegación/modales correctos. Fuente/flujo Git y Worker existentes sin cambios; sin tocar DNS/plan/dominio final. Formulario ahora dirigido al correo institucional por pedido previo; cero envíos/activaciones y recepción aún no validada. Noindex y exclusión de ejemplos/material privado conservados. Este estado supera las notas históricas de transporte vacío. Cierre documental en commit posterior, comprobar también su check.
+
 ## 02/11/2026 — Mejoras publicadas y verificadas
 
 Commitfbf4e78, check Cloudflare completed/success, build1eb6699f-8ac4-4039-a9e4-a57d7b490ddd. 84 recursos públicos correctos y revisión conjunta de62 casos responsive. Evidencia en [[15_Actualizacion_Demo_Publica]]. Transporte vacío/noindex conservados; sin correos/activaciones o cambios de DNS/plan/dominio final. Documentación de cierre sincronizada mediante un commit posterior sin cambios funcionales.

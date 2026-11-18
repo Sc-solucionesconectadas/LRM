@@ -1,5 +1,9 @@
 # Bitácora de LMR
 
+## 2026-11-18 — Publicación20 verificada
+
+Publicado el conjunto16–19 por pedido explícito. Commit funcional de81c03, build4ccf918c-08a8-41b2-ae6c-96fa7b42cad4, check completed/success.39 pruebas/check/build correctos;84 recursos y diez casos responsive, filtros, menú móvil, seis fichas y CTA de Contacto verificados en la demo pública. Ejemplos/material privado excluidos, noindex conservado; destino institucional configurado sin envíos/activaciones. Sin DNS, dominio final, panel o ERP. [[20_Publicacion_Mejoras_LMR]]; se sincroniza la documentación en un commit posterior sin cambios funcionales.
+
 ## 2026-11-18 — Revisión local19
 
 Más separación del catálogo de Servicios, CTA de Proyectos en tarjeta azul y modo de revisión para completar los campos/fotos aún ausentes. Reorganizada la ficha para que datos/relato/galería no compitan por las mismas celdas del grid. Datos originales intactos;39 pruebas/check/build:demo correctos, QA1440/768/390 y seis popups con galería manual y cierres válidos. Renderizadores del panel refrescados conservando155 registros/cuatro borradores. [[19_Revision_Visual_y_Maqueta_Proyectos]] lista archivos, capturas y límites. Sin publicación ni envíos.

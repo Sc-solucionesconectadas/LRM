@@ -1,8 +1,8 @@
 # LMR: repositorio independiente
 
-## Publicación20 autorizada — 2026-11-18
+## Publicación20 verificada — 2026-11-18
 
-Usuario autoriza publicar las mejoras16–19 en la demo existente. Leer docs/obsidian/20_Publicacion_Mejoras_LMR.md y comprobar el resultado real. Publicar solo build:demo, sin ejemplos de revisión ni fuentes privadas, con noindex. Conservar destino institucional y no enviar/activar correo. No tocar DNS, plan, dominio final, panel o ERP. Las notas previas de «sin publicar» describen el estado histórico antes de esta autorización.
+Mejoras16–19 publicadas en la demo existente: commit funcional de81c03, check Cloudflare completed/success, build4ccf918c-08a8-41b2-ae6c-96fa7b42cad4. Leer docs/obsidian/20_Publicacion_Mejoras_LMR.md.84 recursos y diez casos responsive correctos, seis popups/filtros/CTA verificados;39 pruebas/check/build. Se publica solo build:demo, sin ejemplos de revisión ni fuentes privadas, con noindex. Formulario dirigido a infolmr@solution.com.ar; cero envíos/activaciones, recepción sin validar. No tocar DNS, plan, dominio final, panel o ERP. Notas previas de «sin publicar» son históricas. Cierre documental en commit posterior; comprobar último check remoto.
 
 ## Revisión local19 — 2026-11-18
 

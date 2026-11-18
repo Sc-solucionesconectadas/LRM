@@ -1,8 +1,8 @@
 # Contexto de LMR
 
-## Publicación20 autorizada — 2026-11-18
+## Publicación20 verificada — 2026-11-18
 
-El usuario autoriza actualizar la demo existente con las mejoras16–19. [[20_Publicacion_Mejoras_LMR]] registra preparación y verificación. Noindex, raíz /, ejemplos solo locales y destino institucional conservados. Sin envíos/activaciones ni cambios de DNS/plan/dominio final/panel/ERP. Las secciones previas son antecedentes; resultado remoto por verificar.
+Mejoras16–19 publicadas: commit funcional de81c03, check Cloudflare completed/success y build4ccf918c-08a8-41b2-ae6c-96fa7b42cad4. [[20_Publicacion_Mejoras_LMR]] registra evidencia:84 recursos/diez casos responsive/seis fichas/menú/filtros/CTA correctos,39 pruebas y build. Noindex, raíz /, ejemplos solo locales y destino institucional conservados. Sin envíos/activaciones ni cambios de DNS/plan/dominio final/panel/ERP. Las secciones previas son antecedentes. Cierre documental sincronizado por separado sin cambios de interfaz.
 
 ## Revisión local19 — 2026-11-18
 
@@ -49,6 +49,6 @@ Node.js >=22, módulos ECMAScript, HTML/CSS/JS nativos, Sharp 0.35.5 para imáge
 
 ## Límites vigentes
 
-Demo pública noindex, transporte de correo deshabilitado en su artefacto. No enviar pruebas o activaciones; la recepción definitiva no fue comprobada. Material sin permiso de publicación y notas comerciales permanecen fuera del repo público, conservados en el proyecto previo. No cambiar dominio/indexación del cliente por esta separación. No mezclar i-Solution o panel.
+Demo pública noindex, formulario configurado a infolmr@solution.com.ar desde publicación20. No enviar pruebas o activaciones; la recepción definitiva no fue comprobada. Material sin permiso de publicación y notas comerciales permanecen fuera del repo público, conservados en el proyecto previo. Ejemplos de textos/fotos solo locales con --review. No cambiar dominio/indexación del cliente por esta separación. No mezclar i-Solution o panel.
 
 [[05_Pendientes]] · [[02_Decisiones_Tecnicas]] · [[03_Bitacora_Desarrollo]] · [[13_Deploy_Infraestructura]].

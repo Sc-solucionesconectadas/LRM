@@ -1,5 +1,9 @@
 # UI, UX y diseño
 
+## Publicación20 — 2026-11-18
+
+Diseño16–19 ya publicado con autorización: hero/aire de Servicios, introducción por rubros, CTA destacado y seis fichas de proyectos. Diez casos públicos1440/390 sin overflow/errores; menú, filtros y cierres correctos. Ejemplos de texto/fotos permanecen locales; la web muestra solo datos confirmados. [[20_Publicacion_Mejoras_LMR]].
+
 ## Revisión local19 — 2026-11-18
 
 [[19_Revision_Visual_y_Maqueta_Proyectos]]: separación de68/44px del hero de Servicios; tarjeta azul con botón blanco en la invitación de Proyectos. Datos generales a todo el ancho, relato/galería en columnas y móvil apilado. Ejemplos de campos/fotos solo en modo `--review`, con textos explícitos y borde discontinuo; contenido real prioritario. Galería manual accesible con flechas, miniaturas, Home/End; sin nuevos controles de pausa ni dependencias. QA1440/768/390 sin overflow, hover con contraste y cierres Escape/exterior correctos. Sin publicar.

@@ -3,7 +3,7 @@
 ## Publicación20 — 2026-11-18
 
 - [x] Autorización del usuario para publicar mejoras16–19 en la demo existente.
-- [ ] Commit/push y check remoto Cloudflare; verificar páginas, recursos, responsive y exclusión de ejemplos. [[20_Publicacion_Mejoras_LMR]].
+- [x] Commit de81c03/push y check remoto Cloudflare success;84 recursos y diez casos responsive, fichas/filtros/CTA y exclusión de ejemplos correctos. [[20_Publicacion_Mejoras_LMR]].
 - [ ] Conservar pendientes de material final y correo real sin enviar/activar ahora.
 
 ## Revisión local19 — 2026-11-18
@@ -11,26 +11,26 @@
 - [x] Más aire en Servicios, CTA destacado y ejemplos visuales de textos/fotos en las seis fichas.39 pruebas y responsive correctos; [[19_Revision_Visual_y_Maqueta_Proyectos]].
 - [x] Aislar ejemplos del artefacto público y conservar campos/fotos reales. Refrescar panel con155 registros/cuatro borradores idénticos.
 - [ ] Revisión visual del usuario; completar material real y permisos antes de publicación. No publicar el dist generado con `--review`.
-- [ ] Publicar LMR solo con autorización específica; correo real/activación pendientes sin enviar ahora.
+- [x] Publicar mejoras LMR bajo autorización específica: [[20_Publicacion_Mejoras_LMR]]. Correo real/activación siguen pendientes, sin enviar ahora.
 
 ## Etapa local18 — 2026-11-18
 
 - [x] Hero Servicios, introducción por rubros y seis fichas/modal de proyectos; modelo completo también en panel.
 - [x] Formulario a infolmr@solution.com.ar, sin aviso inicial; sin solicitudes de envío/activación. 36 pruebas y QA correctos.
-- [ ] Usuario revisa [[18_Hero_Servicios_Proyectos_y_Contacto]] en local; publicar LMR solo con autorización específica.
+- [x] Usuario revisó y autorizó publicar mejoras18/19: [[20_Publicacion_Mejoras_LMR]].
 - [ ] Recibir material confirmado y fotos; validar recepción/activación del servicio solo cuando se autoricen envíos reales.
 
 
 ## Formato local17
 
 - [x] Soporte B/I seguro y diálogos/galerías coherentes;36 tests/check/build:demo.
-- [ ] Revisión del usuario y publicación solo bajo autorización. [[17_Formato_Editorial_Panel]].
+- [x] Revisión del usuario y publicación autorizada de17 en [[20_Publicacion_Mejoras_LMR]].
 
 ## Adaptación local16 para panel separado
 
 - [x] Portada individual opcional y contador dinámico;36 pruebas/check/build:demo correctos.
 - [x] Altas de equipo/servicio/proyecto revisadas en copia privada; contenido fuente conservado.
-- [ ] Revisión y publicación del adaptador solo cuando se autorice.
+- [x] Adaptador16 publicado con autorización en [[20_Publicacion_Mejoras_LMR]].
 - [ ] Identidad/publicador remotos del panel posteriores; no alojar backend/borradores aquí.
 
 ## Publicación de mejoras — 02/11/2026
