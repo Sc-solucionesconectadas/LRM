@@ -11,7 +11,7 @@ export function renderContact(ctx) {
   const wa = 'https://wa.me/' + site.whatsapp;
   const input = (id, label, attrs = '', required = false) => `<div><label for="${id}">${e(label)}${required ? ` <span>(${e(c.required)})</span>` : ''}</label><input id="${id}" name="${id}" ${attrs} ${required ? 'required' : ''}></div>`;
   const formData = Object.entries({
-    endpoint:ctx.contactEndpoint || '', submit:c.submit, sending:c.sending, success:c.success, activation:ctx.contactTestMode ? 'Falta confirmar el correo de prueba. Revisá el mensaje de activación de FormSubmit antes de volver a enviar.' : 'Todavía no se habilitó la recepción de consultas. Podés contactarnos por los otros canales.',
+    endpoint:ctx.contactEndpoint || '', submit:c.submit, sending:c.sending, success:c.success, activation:ctx.contactTestMode ? 'Falta confirmar el correo de prueba. Revisá el mensaje de activación de FormSubmit antes de volver a enviar.' : 'No pudimos enviar la consulta. Por favor, escribinos a infolmr@solution.com.ar o por WhatsApp.',
     unavailable:c.unavailable, failure:c.failure, uncertain:c.uncertain, 'rate-limit':c.rateLimit,
     'invalid-name':c.invalidName, 'invalid-message':c.invalidMessage, 'project-template':c.projectTemplate, subject:ctx.contactTestMode ? '[PRUEBA LMR] Consulta del formulario web' : c.subject
   }).map(([key, value]) => `data-${key}="${e(value)}"`).join(' ');

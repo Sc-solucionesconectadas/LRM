@@ -21,6 +21,9 @@ export function getConfig(input = {}) {
   const sitePath = cleanPath(input.sitePath ?? '/lmr/');
   if (input.includePreviewProjects !== undefined && typeof input.includePreviewProjects !== 'boolean') throw new Error('includePreviewProjects debe ser booleano.');
   const includePreviewProjects = mode === 'preview' && input.includePreviewProjects !== false;
+  if (input.projectPlaceholders !== undefined && typeof input.projectPlaceholders !== 'boolean') throw new Error('projectPlaceholders debe ser booleano.');
+  const projectPlaceholders = input.projectPlaceholders === true;
+  if (mode === 'production' && projectPlaceholders) throw new Error('Los textos y fotos de posición solo se admiten en revisión local.');
   const prefix = input.deploymentPrefix ?? '';
   if (prefix && !/^\/(?:[a-z0-9-]+\/)*[a-z0-9-]+$/.test(prefix)) throw new Error('Prefijo de despliegue inválido');
   const basePath = prefix + sitePath;
@@ -33,7 +36,7 @@ export function getConfig(input = {}) {
   }
   const contactTestEndpoint = validateContactEndpoint(input.contactTestEndpoint ?? '');
   if (mode !== 'preview' && contactTestEndpoint) throw new Error('El destinatario de prueba no se admite en producción. Retirar LMR_CONTACT_TEST_ENDPOINT.');
-  return { mode, sitePath, basePath, publicBaseUrl, deploymentPrefix: prefix, includePreviewProjects, contactEndpoint: contactTestEndpoint || validateContactEndpoint(input.contactEndpoint ?? ''), contactTestMode:Boolean(contactTestEndpoint) };
+  return { mode, sitePath, basePath, publicBaseUrl, deploymentPrefix: prefix, includePreviewProjects, projectPlaceholders, contactEndpoint: contactTestEndpoint || validateContactEndpoint(input.contactEndpoint ?? ''), contactTestMode:Boolean(contactTestEndpoint) };
 }
 
 async function createAssets(target, excludedImageKeys = new Set()) {
@@ -125,6 +128,6 @@ export async function build(input = {}) {
 if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1])).href) {
   const localEnv = join(projectRoot, '.env.local');
   if (existsSync(localEnv)) process.loadEnvFile(localEnv);
-  const report = await build({ contactTestEndpoint:process.env.LMR_CONTACT_TEST_ENDPOINT ?? '', contactEndpoint: process.env.LMR_CONTACT_ENDPOINT, mode: process.env.BUILD_MODE ?? 'preview', publicBaseUrl: process.env.PUBLIC_BASE_URL, deploymentPrefix: process.env.DEPLOY_PREFIX ?? '', sitePath: process.env.LMR_SITE_PATH ?? '/lmr/' });
+  const report = await build({ projectPlaceholders:process.argv.includes('--review'), contactTestEndpoint:process.env.LMR_CONTACT_TEST_ENDPOINT ?? '', contactEndpoint: process.env.LMR_CONTACT_ENDPOINT, mode: process.env.BUILD_MODE ?? 'preview', publicBaseUrl: process.env.PUBLIC_BASE_URL, deploymentPrefix: process.env.DEPLOY_PREFIX ?? '', sitePath: process.env.LMR_SITE_PATH ?? '/lmr/' });
   console.log(`${report.pages} páginas LMR generadas · ${report.mode} · ${report.basePath}`);
 }

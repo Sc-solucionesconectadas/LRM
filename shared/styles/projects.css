@@ -1,4 +1,38 @@
 /* Portfolio styles are loaded only on /referencias/. */
+.portfolio-story{padding-block:66px 48px}
+.portfolio-story-heading{display:grid;grid-template-columns:.95fr 1.05fr;gap:64px;align-items:start}
+.portfolio-story-heading h2{font-size:clamp(32px,3vw,43px);line-height:1.2;margin:0;max-width:520px}
+.portfolio-story-heading>div>p{font-size:17px;line-height:1.85;color:var(--muted);margin:0}
+.portfolio-story-heading>div>p+p{margin-top:15px}
+.portfolio-sector-stories{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-top:36px}
+.portfolio-sector-stories article{display:flex;gap:17px;align-items:start;min-width:0;padding:26px 22px;background:#f1f7fb;border:1px solid #d4e4ef;border-radius:10px}
+.portfolio-sector-stories .company-technical-illustration{width:67px;height:62px;flex:none;color:#2a6b9f}
+.portfolio-sector-stories h3{font-size:21px;line-height:1.35;letter-spacing:-.025em;margin:0 0 12px}
+.portfolio-sector-stories p{font-size:15px;line-height:1.8;color:var(--muted);margin:0}
+.portfolio-story-invitation{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:34px;align-items:center;margin:32px 0 0;padding:32px 36px;border:1px solid #284f71;border-radius:12px;background:#102e49;box-shadow:0 10px 25px #102b4710}
+.portfolio-story-invitation h3{font-size:clamp(24px,2.2vw,30px);line-height:1.3;letter-spacing:-.025em;color:white;margin:0 0 12px}
+#contenido .portfolio-story-invitation h3 strong{color:#b9dffb;font-weight:600}
+.portfolio-story-invitation p{font-size:16px;line-height:1.8;color:#d5e7f5;max-width:660px;margin:0}
+.portfolio-story-invitation .button-white{color:#164b7d;background:#fff;border-color:#fff;--button-sweep:#dcecf8;white-space:nowrap;min-height:54px}
+.portfolio-story-invitation .button-white:focus-visible{outline-color:#a8d7fa}
+@media(hover:hover) and (pointer:fine){.portfolio-story-invitation .button-white:hover{color:#123f68;background:#e7f2fa;border-color:#c8e0f2}}
+@media(max-width:760px){.portfolio-story-invitation{grid-template-columns:1fr;gap:24px;padding:27px 24px;margin-top:26px}.portfolio-story-invitation .button{justify-content:space-between;white-space:normal}}
+.project-dossier-facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;padding:22px 24px;background:#eff6fb;border-radius:8px;margin:0 0 27px}
+.project-dossier-facts dt{font-size:13px;color:var(--muted);line-height:1.5;margin-bottom:6px}
+.project-dossier-facts dd{font-size:17px;font-weight:500;line-height:1.6;color:var(--ink);margin:0;overflow-wrap:anywhere}
+.project-dossier-story{display:grid;gap:24px;margin-bottom:29px}
+.project-dossier-story h3{font-size:21px;line-height:1.35;letter-spacing:-.025em;margin:0 0 11px}
+.project-dossier-story p{font-size:16px;line-height:1.85;color:var(--muted);margin:0;white-space:pre-line}
+.project-dossier-facts .project-pending-fact{font-size:15px;color:#4b6b86;font-weight:400}
+.project-pending-section{border-left:2px dashed #a3c5df;padding-left:16px}
+.project-pending-section p{color:#4b6b86}
+.project-gallery-title{font-size:19px;line-height:1.4;margin:0 0 16px}
+.project-photo-slot{min-height:290px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:17px;padding:30px 20px;text-align:center;border:1px dashed #9abdd7;border-radius:8px;background:#edf5fb;color:#336b96}
+.project-photo-slot svg{width:64px;height:64px;opacity:.75}
+#contenido .project-photo-slot>span{font-size:20px;line-height:1.4;font-weight:500}
+.project-photo-slot-thumb{display:grid;place-items:center;width:100%;height:100%;border:1px dashed #a7c6dc;border-radius:2px;color:#336b96;font-size:13px;font-weight:500}
+@media(max-width:1100px){.portfolio-sector-stories article{flex-direction:column}.portfolio-story-heading{gap:35px}}
+@media(max-width:760px){.portfolio-story{padding-block:45px 25px}.portfolio-story-heading{grid-template-columns:1fr;gap:22px}.portfolio-sector-stories{grid-template-columns:1fr;gap:17px;margin-top:27px}.portfolio-sector-stories article{flex-direction:row;padding:23px 20px}.portfolio-story-heading>div>p{font-size:16px}.project-dossier-facts{grid-template-columns:1fr;gap:16px;padding:20px}.project-dossier-story h3{font-size:20px}}
 html{scroll-behavior:smooth}
 .portfolio-hero{position:relative;isolation:isolate;overflow:hidden;background:#102b47;color:#fff}
 .portfolio-hero-image{position:absolute;inset:0;z-index:-2;width:100%;height:100%;object-fit:cover;object-position:center 42%}
@@ -83,13 +117,11 @@ html{scroll-behavior:smooth}
 .project-sheet-heading .project-entry-state{margin:8px 0 15px}
 .project-sheet h2{font-size:33px;line-height:1.25;letter-spacing:-.035em;margin:8px 0 16px;outline:none}
 .project-sheet-work{font-size:18px;line-height:1.7;color:var(--ink);margin:0 0 18px;max-width:750px}
-.project-sheet .project-dossier.has-project-photos{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:20px 30px;align-items:start}
-.project-sheet .project-dossier-description{grid-column:2;grid-row:1;margin:0;font-size:16px}
-.project-sheet .project-photo-gallery{display:contents}
-.project-sheet .project-photo-stage{grid-column:1;grid-row:1/5}
-.project-sheet .project-photo-controls{grid-column:2;grid-row:2;margin:0}
-.project-sheet .project-photo-thumbs{grid-column:2;grid-row:3;margin:0}
-.project-sheet .project-dossier>.button{grid-column:2;grid-row:4;align-self:start;margin:0;font-size:16px}
+.project-sheet .project-dossier.has-project-photos{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:28px 32px;align-items:start}
+.project-sheet .project-dossier-facts{grid-column:1/-1;margin:0}
+.project-sheet .project-dossier-story{grid-column:1;grid-row:2;margin:0}
+.project-sheet .project-photo-gallery{grid-column:2;grid-row:2;display:block}
+.project-sheet .project-dossier>.button{grid-column:1/-1;align-self:start;margin:0;font-size:16px}
 .project-sheet .project-dossier:not(.has-project-photos)>.button{margin-top:24px}
 .project-sheet .project-photo-stage figure+figure{margin-top:0}
 .project-sheet-return{display:block;background:transparent;color:var(--action);min-height:44px;margin:22px auto 0;padding:9px 14px;font-size:15px;text-decoration:underline;text-underline-offset:4px;border-radius:4px}
@@ -142,11 +174,11 @@ html{scroll-behavior:smooth}
   .project-sheet-heading{padding-right:44px}
   .project-sheet h2{font-size:27px}
   .project-sheet-work{font-size:16px}
-  .project-sheet .project-dossier.has-project-photos{display:flex;flex-direction:column;gap:0}
-  .project-sheet .project-dossier-description{margin-bottom:22px}
-  .project-sheet .project-photo-gallery{display:flex;flex-direction:column;width:100%;gap:16px}
+  .project-sheet .project-dossier.has-project-photos{grid-template-columns:minmax(0,1fr);gap:26px}
+  .project-sheet .project-dossier-story,.project-sheet .project-photo-gallery{grid-column:1;grid-row:auto}
+  .project-sheet .project-photo-gallery{width:100%}
   .project-sheet .project-photo-stage img{height:300px}
-  .project-sheet .project-dossier>.button{margin-top:24px;align-self:stretch}
+  .project-sheet .project-dossier>.button{margin-top:0;align-self:stretch}
 }
 @media(max-width:360px){.project-entry-content{padding:22px}.project-entry h2{font-size:23px}.project-sheet-frame{padding-inline:18px}.project-sheet h2{font-size:25px}.project-photo-thumbs{gap:8px}.project-photo-thumbs button{width:64px;height:56px}.project-sheet .project-photo-stage img{height:260px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.project-entry,.project-entry-photo>img,.project-entry-action .button svg,.portfolio-filters button{transition:none}.project-entry:hover .project-entry-photo>img,.project-entry-action .button:hover svg{transform:none}}

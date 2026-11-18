@@ -1,5 +1,26 @@
 # Contexto de LMR
 
+## Publicación20 autorizada — 2026-11-18
+
+El usuario autoriza actualizar la demo existente con las mejoras16–19. [[20_Publicacion_Mejoras_LMR]] registra preparación y verificación. Noindex, raíz /, ejemplos solo locales y destino institucional conservados. Sin envíos/activaciones ni cambios de DNS/plan/dominio final/panel/ERP. Las secciones previas son antecedentes; resultado remoto por verificar.
+
+## Revisión local19 — 2026-11-18
+
+[[19_Revision_Visual_y_Maqueta_Proyectos]]: aire entre hero y catálogo de Servicios, CTA destacado después de los rubros y estructura de ficha completa con ejemplos de textos/tres fotos. `npm run dev` activa `--review`; los campos/fotos confirmados prevalecen y la fuente no cambia. Build normal/demo/panel sin ejemplos; producción los rechaza.39 pruebas/check/build:demo y QA1440/768/390 correctos. Panel155 registros/cuatro borradores intactos. **Sin publicación de LMR ni correos.** Destino institucional configurado desde etapa18; activación/recepción pendientes de autorización.
+
+## Etapa local18 — 2026-11-18
+
+[[18_Hero_Servicios_Proyectos_y_Contacto]]: hero de Servicios, introducción por rubros y seis popups con alcance confirmado. Modelo opcional de cliente/ubicación/objetivo/solución/resultado y galería compatible con panel. Formulario local y artefacto futuro dirigidos a infolmr@solution.com.ar, sin aviso inicial y sin enviar solicitudes o activaciones. Recepción no validada; no prometer Recibidos. 36 pruebas/check/build y QA1440/390 correctos; panel 26 pruebas, 155 registros/cuatro borradores preservados. **LMR sigue local, sin publicación**: este turno autoriza publicar i-Solution. No modificar ERP, dominio, DNS, cuentas o archivos privados.
+
+
+## Formato editorial local17 — 02/11/2026
+
+[[17_Formato_Editorial_Panel]]: B/I opcional en campos de contenido, conservado en diálogos/carrusel/galerías, sin HTML arbitrario ni atributos enriquecidos. Empresa tolera proyectos ocultos.36 tests/check/build:demo correctos; sin modificar JSON/fotos/PDF o publicar.
+
+## 02/11/2026 — Adaptación local para panel separado
+
+[[16_Adaptador_Servicios_Para_Panel_Local]]: portada individual de servicios y contador calculado; atlas/datos conservados.36 pruebas/check/build:demo correctos. Panel privado local fuera de este repo en C:/Proyectos/Solution-Group-Admin. Sin publicación; demo sigue15.
+
 ## 02/11/2026 — Actualización pública verificada
 
 Mejoras publicadas en https://lmr-demo.scsolucionesconectadas.com.ar/: commitfbf4e78, check Cloudflare success y build1eb6699f-8ac4-4039-a9e4-a57d7b490ddd. [[15_Actualizacion_Demo_Publica]] registra evidencia y prevalece sobre el estado local histórico de14. Transporte vacío/noindex conservados; material, recepción real y puntos5/6 pendientes.

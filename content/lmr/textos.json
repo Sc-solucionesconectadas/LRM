@@ -257,7 +257,13 @@
     "guidanceTitle": "¿Tu obra integra\n**varias especialidades?**",
     "guidanceText": "Coordinamos **energía, control y comunicaciones** para definir los trabajos que necesita tu proyecto, desde la ingeniería hasta la ejecución.",
     "guidanceCta": "Conversemos sobre tu obra",
-    "relatedProjects": "Proyectos relacionados"
+    "relatedProjects": "Proyectos relacionados",
+    "exploreCta": "Ver especialidades",
+    "heroCapabilities": [
+      "Media y baja tensión",
+      "Tableros y automatización",
+      "Redes y comunicaciones"
+    ]
   },
   "projects": {
     "title": "Ingeniería aplicada.\n**Proyectos reales.**",
@@ -287,7 +293,7 @@
     "all": "Todos",
     "referenceSingle": "referencia",
     "referencePlural": "referencias",
-    "detailCta": "Ver avance y fotografías",
+    "detailCta": "Ver proyecto",
     "galleryLabel": "Fotografías del proyecto",
     "previousPhoto": "Fotografía anterior",
     "nextPhoto": "Fotografía siguiente",
@@ -298,7 +304,39 @@
     "closeTitle": "Tu próxima obra,\n**con alcance definido.**",
     "closeText": "**Media y baja tensión, celdas, tableros y PLC.** Conversemos sobre la ingeniería y los trabajos que necesita tu proyecto.",
     "heroLabel": "Proyectos LMR",
-    "exploreCta": "Explorar los proyectos"
+    "exploreCta": "Explorar los proyectos",
+    "clientLabel": "Cliente",
+    "installationLabel": "Institución / instalación",
+    "sectorLabel": "Rubro",
+    "locationLabel": "Ubicación",
+    "challengeLabel": "El punto de partida",
+    "solutionLabel": "Qué hicimos",
+    "descriptionLabel": "Sobre la intervención",
+    "resultLabel": "Resultado",
+    "storyTitle": "Detrás de cada instalación,\n**una necesidad concreta.**",
+    "storyIntro": "La tecnología cumple su propósito cuando acompaña a las personas y a las actividades que dependen de ella. Nuestras referencias reúnen trabajos en **salud, agua e infraestructura y procesos industriales**.",
+    "storyText": "Desde el control de instalaciones hasta la automatización de una operación: cada proyecto tiene su propio contexto. Conocé las intervenciones de LMR y las especialidades que se integraron en cada una.",
+    "storyInvitationTitle": "¿Tu proyecto tiene\n**una necesidad similar?**",
+    "storyInvitation": "Conversemos sobre lo que necesita tu instalación y las especialidades que podemos integrar.",
+    "storyInvitationCta": "Consultar mi proyecto",
+    "sectorStories": [
+      {
+        "sector": "Salud",
+        "illustration": "health",
+        "text": "Control de instalaciones y sistemas de presurización en entornos de atención de la salud."
+      },
+      {
+        "sector": "Agua e infraestructura",
+        "illustration": "water",
+        "text": "Automatización de cisternas y control de sistemas vinculados al abastecimiento de agua."
+      },
+      {
+        "sector": "Industria",
+        "illustration": "industry",
+        "text": "Automatización de operaciones de carga e instalaciones para el tratamiento de efluentes."
+      }
+    ],
+    "completed": "Proyecto finalizado"
   },
   "contact": {
     "eyebrow": "Contacto LMR",
@@ -334,7 +372,7 @@
     "submit": "Enviar consulta",
     "sending": "Enviando consulta…",
     "success": "¡Listo! Tu consulta fue enviada. Gracias por escribirnos. Te responderemos al correo que indicaste.",
-    "unavailable": "El envío desde la web aún no está habilitado. Por el momento, contactanos por correo o WhatsApp mediante los enlaces de esta página.",
+    "unavailable": "Podés realizar tu consulta por correo o WhatsApp desde los enlaces de esta página.",
     "failure": "No pudimos enviar tu consulta. Los datos siguen en el formulario. Podés volver a intentarlo o contactarnos por los otros canales.",
     "uncertain": "No pudimos confirmar el envío. Los datos siguen en el formulario. Revisá tu conexión antes de volver a intentarlo.",
     "rateLimit": "Se alcanzó el límite de envíos. Esperá unos minutos antes de volver a intentarlo o usá nuestros otros canales de contacto.",

@@ -6,14 +6,14 @@ import { build, projectRoot } from './build.mjs';
 export const demoDirectory = resolve(projectRoot, '.qa/cloudflare/lmr-demo');
 
 export async function prepareLmrDemo() {
-  // Public review is different from the complete local preview: material awaiting
-  // publication permission and mail transport must not enter this artifact.
+  // Exclude material awaiting permission. The institutional form destination is
+  // configured by request; building this artifact never sends or activates mail.
   const report = await build({
     outDir: demoDirectory,
     mode: 'preview',
     sitePath: '/',
-    contactEndpoint: '',
-    includePreviewProjects: false
+    includePreviewProjects: false,
+    projectPlaceholders: false
   });
   await writeFile(join(demoDirectory, '_headers'), `/*
   X-Robots-Tag: noindex, nofollow, noarchive

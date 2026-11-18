@@ -86,9 +86,8 @@ function openSheet(id, trigger = null, animate = false) {
   invoker?.setAttribute('aria-expanded','false');
   invoker = trigger || card.querySelector('[data-project-open]');
   invoker.setAttribute('aria-expanded','true');
-  sheet.querySelector('#project-sheet-title').textContent = card.querySelector('[data-project-title]').textContent;
+  sheet.querySelector('#project-sheet-title').replaceChildren(...[...card.querySelector('[data-project-title]').childNodes].map(node=>node.cloneNode(true)));
   sheet.querySelector('[data-sheet-sector]').textContent = card.dataset.portfolioSector;
-  sheet.querySelector('[data-sheet-work]').textContent = card.querySelector('.project-entry-work').textContent;
   const badge = card.querySelector('.project-entry-state');
   sheet.querySelector('[data-sheet-state]').replaceChildren(...(badge ? [badge.cloneNode(true)] : []));
   const dossier = card.querySelector('.project-dossier').cloneNode(true);

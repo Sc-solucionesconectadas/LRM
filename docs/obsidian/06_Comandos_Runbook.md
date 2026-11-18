@@ -1,5 +1,13 @@
 # Comandos y operación
 
+## Revisión visual de proyectos — 2026-11-18
+
+`npm run dev` genera con `--review` y sirve http://127.0.0.1:4174/lmr/. Completa visualmente campos/fotos ausentes sin cambiar contenido real. Si el servidor ya está abierto, ejecutar solo `node scripts/build.mjs --review` y recargar la pestaña. [[19_Revision_Visual_y_Maqueta_Proyectos]].
+
+`npm run build` omite ejemplos. `npm run build:demo` prepara exclusivamente `.qa/cloudflare/lmr-demo`, también sin ejemplos y sin material previewOnly. Nunca publicar el dist de revisión. Desde etapa18 ese artefacto usa el destino institucional de correo; construirlo no realiza solicitudes de envío/activación. El párrafo histórico de abajo sobre endpoint vacío de build:demo queda superado por esta configuración solicitada.
+
+Para revisar sin transporte: `node --input-type=module -e "import {build} from './scripts/build.mjs'; await build({projectPlaceholders:true,contactEndpoint:''});"`; luego `npm run preview`. No enviar formularios en esta etapa.
+
 ## Revisión local con envío apagado — 02/11/2026
 
 Para revisar [[14_Funcionalidad_y_Calidad]] conservando la restricción de correo, generar una copia con endpoint vacío y luego servirla:

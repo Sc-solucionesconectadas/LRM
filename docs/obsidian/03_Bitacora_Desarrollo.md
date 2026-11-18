@@ -1,5 +1,22 @@
 # Bitácora de LMR
 
+## 2026-11-18 — Revisión local19
+
+Más separación del catálogo de Servicios, CTA de Proyectos en tarjeta azul y modo de revisión para completar los campos/fotos aún ausentes. Reorganizada la ficha para que datos/relato/galería no compitan por las mismas celdas del grid. Datos originales intactos;39 pruebas/check/build:demo correctos, QA1440/768/390 y seis popups con galería manual y cierres válidos. Renderizadores del panel refrescados conservando155 registros/cuatro borradores. [[19_Revision_Visual_y_Maqueta_Proyectos]] lista archivos, capturas y límites. Sin publicación ni envíos.
+
+## Etapa local18 — 2026-11-18
+
+[[18_Hero_Servicios_Proyectos_y_Contacto]]: hero de Servicios, introducción por rubros y seis popups con alcance confirmado. Modelo opcional de cliente/ubicación/objetivo/solución/resultado y galería compatible con panel. Formulario local y artefacto futuro dirigidos a infolmr@solution.com.ar, sin aviso inicial y sin enviar solicitudes o activaciones. Recepción no validada; no prometer Recibidos. 36 pruebas/check/build y QA1440/390 correctos; panel 26 pruebas, 155 registros/cuatro borradores preservados. **LMR sigue local, sin publicación**: este turno autoriza publicar i-Solution. No modificar ERP, dominio, DNS, cuentas o archivos privados.
+
+
+## 2026-11-02 ? Soporte de formato editorial17
+
+Helper de rangos B/I escapados y adaptación de plantillas, títulos de diálogos y pies de galerías; referencias ocultas no rompen Empresa.36 tests/check/build:demo y preview privado correctos. Sin datos/medios/PDF/emails/deploy. [[17_Formato_Editorial_Panel]].
+
+## 2026-11-02 — Adaptación de servicios para panel local
+
+services-page.mjs/services-catalog.css admiten portada individual y cantidad dinámica, conservando atlas.36 pruebas/check/build:demo correctos y altas QA en plantilla real. Sin cambios de datos/fotos/PDF/correo/publicación. Ver [[16_Adaptador_Servicios_Para_Panel_Local]].
+
 ## 02/11/2026 — Mejoras publicadas y verificadas
 
 Commitfbf4e78, check Cloudflare completed/success, build1eb6699f-8ac4-4039-a9e4-a57d7b490ddd. 84 recursos públicos correctos y revisión conjunta de62 casos responsive. Evidencia en [[15_Actualizacion_Demo_Publica]]. Transporte vacío/noindex conservados; sin correos/activaciones o cambios de DNS/plan/dominio final. Documentación de cierre sincronizada mediante un commit posterior sin cambios funcionales.

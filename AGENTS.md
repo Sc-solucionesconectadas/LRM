@@ -1,5 +1,22 @@
 # LMR: repositorio independiente
 
+## Publicación20 autorizada — 2026-11-18
+
+Usuario autoriza publicar las mejoras16–19 en la demo existente. Leer docs/obsidian/20_Publicacion_Mejoras_LMR.md y comprobar el resultado real. Publicar solo build:demo, sin ejemplos de revisión ni fuentes privadas, con noindex. Conservar destino institucional y no enviar/activar correo. No tocar DNS, plan, dominio final, panel o ERP. Las notas previas de «sin publicar» describen el estado histórico antes de esta autorización.
+
+## Revisión local19 — 2026-11-18
+
+Leer docs/obsidian/19_Revision_Visual_y_Maqueta_Proyectos.md. Mayor aire en Servicios y CTA azul de Proyectos. `npm run dev` usa `--review` para mostrar textos/fotos de posición solo donde falta material, conservando datos reales. Build normal/demo/panel sin ejemplos; producción los rechaza.39 pruebas/check/build:demo correctos; no publicar el dist de revisión. LMR sigue local; sin emails/activaciones, DNS, cuentas ni cambios a ERP. Panel155 registros/cuatro borradores conservados después de refrescar renderizadores.
+
+## Etapa local18 — 2026-11-18
+
+Leer docs/obsidian/18_Hero_Servicios_Proyectos_y_Contacto.md: hero de Servicios, introducción por rubros y seis popups con alcance confirmado. Modelo opcional de cliente/ubicación/objetivo/solución/resultado y galería compatible con panel. Formulario local y artefacto futuro dirigidos a infolmr@solution.com.ar, sin aviso inicial y sin enviar solicitudes o activaciones. Recepción no validada; no prometer Recibidos. 36 pruebas/check/build y QA1440/390 correctos; panel 26 pruebas, 155 registros/cuatro borradores preservados. **LMR sigue local, sin publicación**: este turno autoriza publicar i-Solution. No modificar ERP, dominio, DNS, cuentas o archivos privados.
+
+
+- Etapa17 local: soporte opcional de formatting (B/I) para equipo, servicios, proyectos y galerías; atributos/SEO planos y escapados. Diálogos clonan nodos seguros, Empresa omite referencias ocultas. Leer docs/obsidian/17_Formato_Editorial_Panel.md.36 tests/check/build:demo correctos; JSON/medios/PDF/correo sin cambios y sin deploy. Panel separado conserva borradores/usuarios futuros, no incorporarlo aqu?.
+
+- Adaptación local16 del02/11/2026: panel separado autorizado en C:/Proyectos/Solution-Group-Admin, limitado a equipo/servicios/proyectos. Aquí solo portada individual opcional de servicios (fallback atlas) y contador dinámico; leer nota16.36 pruebas/check/build:demo correctos; sin editar contenido/fotos/PDF ni publicar. No incorporar backend/borradores a este repo público. Demo sigue15.
+
 - Actualización pública verificada02/11/2026: mejoras14 publicadas con commitfbf4e78, check Cloudflare success y build1eb6699f-8ac4-4039-a9e4-a57d7b490ddd. Leer docs/obsidian/15_Actualizacion_Demo_Publica.md. Conservar noindex/endpoint vacío; cero envíos o activaciones. Material y puntos5/6 pendientes. El estado local histórico de14 queda superado por esta publicación.
 
 - Alcance vigente02/11/2026: implementados localmente los puntos 1–4; leer docs/obsidian/14_Funcionalidad_y_Calidad.md. Puntos 5/6 diferidos; no se hizo push/deploy en esta sesión. 36 pruebas correctas. Mantener envío vacío en copias de revisión; npm run dev puede usar el endpoint fuente. No hacer envíos/activaciones ni tratar la aceptación simulada como recepción real.
@@ -10,7 +27,7 @@
 - Este repositorio es público. No versionar credenciales, .env.local, consultas del formulario, fotografías sin autorización, material marcado solo para revisión privada ni documentación comercial interna.
 - La demo pública es https://lmr-demo.scsolucionesconectadas.com.ar/. Worker lmr-demo, configuración deploy/lmr-demo/wrangler.jsonc. GitHub main está conectado a Cloudflare Builds: bc8ce28 produjo un despliegue correcto el02/11/2026 (versión8367edaa). Cada push autorizado requiere comprobar el check remoto y URL, no solo el commit.
 - Git usa un helper local con configuración aislada de GitHub CLI fuera del repo. La cuenta autorizada es Scsolucionesconectadas; no reemplazar la cuenta/configuración global de otros proyectos ni copiar secretos a Git.
-- Build de demo: npm run build:demo. Salida exclusiva .qa/cloudflare/lmr-demo, raíz /, noindex, sin sitemap/canonical definitivo ni material previewOnly. El formulario no tiene transporte en esa copia; no enviar pruebas ni activaciones. Destino definitivo infolmr@solution.com.ar se conserva en la configuración fuente.
+- Build de demo: npm run build:demo. Salida exclusiva .qa/cloudflare/lmr-demo, raíz /, noindex, sin sitemap/canonical definitivo, material previewOnly ni ejemplos de revisión. Desde etapa18, el formulario se prepara con destino institucional infolmr@solution.com.ar por pedido del usuario; construir no activa ni envía correo. No enviar pruebas/activaciones. La demo remota sigue con el estado del último deploy real.
 - No activar producción/indexación/dominio del cliente ni enviar correos sin instrucción expresa. No prometer llegada a Recibidos.
 - Una modificación local no se publica hasta commit/push. El usuario autorizó la subida inicial y vinculación automática; para publicaciones posteriores respetar la instrucción vigente de cada tarea.
 - Ejecutar npm run check, npm test y npm run build:demo. Revisar Git diff y fuentes públicas antes de commit. No force-push. Comprobar despliegue real tras push autorizado.

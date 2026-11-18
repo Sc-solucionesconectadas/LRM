@@ -15,7 +15,8 @@ assert.equal(new Set(projects.map(p => p.id)).size, projects.length);
 for (const p of projects) {
   assert.ok(p.source && p.work && p.title);
   assert.ok(p.previewOnly === undefined || typeof p.previewOnly === 'boolean');
-  assert.ok(p.status === undefined || p.status === 'in-progress');
+  assert.ok(p.status === undefined || ['','in-progress','completed'].includes(p.status));
+  for(const field of ['client','location','challenge','solution','result'])if(p[field]!==undefined)assert.ok(typeof p[field]==='string'&&p[field].length<=(['client','location'].includes(field)?1000:12000),`Campo de proyecto inválido: ${field}`);
   for (const photo of p.photos ?? []) { assert.match(photo.image, /^[a-z0-9-]+$/); assert.ok(photo.alt && photo.caption); }
 }
 const projectUi = await load('proyectos-ui');

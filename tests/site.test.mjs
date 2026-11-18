@@ -70,8 +70,12 @@ test('construye cinco páginas HTML, contenido completo y enlaces locales válid
   const projects = await read(resolve(outDir, 'lmr/referencias/index.html'));
   const expectedProjects = JSON.parse(await read(resolve(root, 'content/lmr/proyectos.json')));
   assert.equal((projects.match(/data-portfolio-project/g) || []).length, expectedProjects.length);
-  assert.equal((projects.match(/data-project-open=/g) || []).length, 0, 'Las referencias sin material ampliable no abren fichas vacias');
-  assert.equal((projects.match(/<dialog\b/g) || []).length, 0);
+  assert.equal((projects.match(/data-project-open=/g) || []).length, expectedProjects.length, 'Cada trabajo confirmado tiene una ficha con alcance y sector');
+  assert.equal((projects.match(/<dialog\b/g) || []).length, 1);
+  assert.match(projects,/portfolio-story|project-dossier-facts/);
+  assert.doesNotMatch(projects,/Acá iría|project-pending-section|project-photo-slot/);
+  assert.doesNotMatch(projects,/La referencia institucional menciona|Fuente privada|Sobre esta referencia/);
+  assert.match(services,/services-hero-image/);
   assert.match(projects, /assets\/projects.css/);
   assert.match(projects, /assets\/projects.js/);
   assert.doesNotMatch(projects, /class="project-number"|class="contact-band"|class="project-electrical"/);
@@ -156,7 +160,8 @@ test('produce canonical, sitemap y schema solo con dominio explícito; admite ra
   const publicHome = await read(resolve(outDir, 'lmr/index.html'));
   assert.equal((publicProjects.match(/data-portfolio-project/g) || []).length, 6);
   assert.doesNotMatch(publicProjects + publicHome, /unidad-penal-8|Unidad penal 8|pinero-/);
-  assert.doesNotMatch(publicProjects, /data-portfolio-filter="Institucional"|<dialog\b|data-project-open=/);
+  assert.doesNotMatch(publicProjects, /data-portfolio-filter="Institucional"/);
+  assert.match(publicProjects, /<dialog\b|data-project-open=/);
   assert.ok(!(await readdir(resolve(outDir, 'lmr/assets'))).some(f => f.startsWith('pinero-')), 'Fotos pendientes excluidas también del artefacto público');
   const html = await read(resolve(outDir, 'lmr/servicios/index.html'));
   assert.ok(html.includes(`rel="canonical" href="${base}servicios/"`));

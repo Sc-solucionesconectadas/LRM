@@ -41,7 +41,7 @@ function openSheet(id, trigger = null, animate = false) {
   sheet.querySelector('[data-sheet-art]').replaceChildren(card.querySelector('.service-art').cloneNode(true));
   sheet.querySelector('[data-sheet-art] img').loading = 'eager';
   sheet.querySelector('[data-sheet-category]').textContent = card.querySelector('.service-card-category').textContent;
-  sheet.querySelector('#service-sheet-title').textContent = card.querySelector('[data-service-title]').textContent;
+  sheet.querySelector('#service-sheet-title').replaceChildren(...[...card.querySelector('[data-service-title]').childNodes].map(node=>node.cloneNode(true)));
   const brief = card.querySelector('.service-brief').cloneNode(true);
   brief.querySelector('.service-description').id = 'service-sheet-description';
   sheet.querySelector('[data-sheet-brief]').replaceChildren(brief);

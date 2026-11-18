@@ -1,4 +1,5 @@
 import { escapeHtml as e } from '../../shared/html.mjs';
+import {formatted as f} from '../../shared/inline-format.mjs';
 import { picture } from '../../shared/layout.mjs';
 
 // All three views read the same first photograph; missing media never invents a work.
@@ -11,5 +12,5 @@ export function projectCover(ctx, project, { className = '', sizes = '(max-width
   const badge = clientLogo && project.logo
     ? picture(ctx, project.logo.replace(/\.[^.]+$/, ''), '', { className: 'project-visual-client', sizes: '72px' })
     : '';
-  return `<figure class="project-visual project-visual--${kind} ${e(className)}" ${photo ? '' : 'aria-hidden="true"'}>${media}${badge}${caption && photo ? `<figcaption>${e(photo.caption)}</figcaption>` : ''}</figure>`;
+  return `<figure class="project-visual project-visual--${kind} ${e(className)}" ${photo ? '' : 'aria-hidden="true"'}>${media}${badge}${caption && photo ? `<figcaption>${f(project,'photos.0.caption')}</figcaption>` : ''}</figure>`;
 }
