@@ -1,5 +1,7 @@
 # Publicación de mejoras de LMR
 
+Corrección posterior: [[21_Fichas_Completas_Demo]] activa en la demo provisional los ejemplos que esta publicación excluyó. Usuario requiere ver la misma estructura completa de fichas que el local; la restricción de ejemplos solo locales se mantiene únicamente para la versión definitiva y el panel, según la configuración vigente.
+
 Fecha: 2026-11-18. El usuario autoriza publicar LMR en la demo existente.
 
 ## Alcance

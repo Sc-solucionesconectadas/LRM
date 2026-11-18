@@ -16,10 +16,11 @@ test('los ejemplos de texto y fotos requieren revisión explícita y se rechazan
   assert.equal(getConfig().projectPlaceholders,false);
   assert.equal(getConfig({projectPlaceholders:true}).projectPlaceholders,true);
   assert.throws(()=>getConfig({projectPlaceholders:'true'}),/booleano/);
-  assert.throws(()=>getConfig({mode:'production',publicBaseUrl:'https://example.com/lmr/',projectPlaceholders:true}),/revisión local/);
+  assert.throws(()=>getConfig({mode:'production',publicBaseUrl:'https://example.com/lmr/',projectPlaceholders:true}),/modo de revisión/);
 });
 
-test('demo preparada de LMR: noindex, material autorizado y formulario dirigido solo al correo institucional', async () => {
+test('demo preparada de LMR: fichas completas para revisar, noindex y material autorizado', async () => {
+  const projectSource=await readFile(resolve(projectRoot,'content/lmr/proyectos.json'),'utf8');
   const report = await prepareLmrDemo();
   assert.equal(report.pages, 5);
   assert.equal(report.basePath, '/');
@@ -35,7 +36,17 @@ test('demo preparada de LMR: noindex, material autorizado y formulario dirigido 
   }
   const projects = await readFile(resolve(demoDirectory, 'referencias/index.html'), 'utf8');
   assert.equal((projects.match(/data-portfolio-project/g) || []).length, 6);
-  assert.doesNotMatch(projects,/Acá iría|project-pending-section|project-photo-slot/);
+  const publicProjects=JSON.parse(projectSource).filter(project=>!project.previewOnly);
+  const expectedPhotos=publicProjects.reduce((sum,project)=>sum+Math.max(3,project.photos?.length??0),0);
+  const missingPhotos=publicProjects.reduce((sum,project)=>sum+Math.max(0,3-(project.photos?.length??0)),0);
+  assert.equal((projects.match(/data-project-photo[ >]/g)||[]).length,expectedPhotos);
+  assert.equal((projects.match(/class="project-photo-slot"/g)||[]).length,missingPhotos);
+  if(missingPhotos) assert.match(projects,/Acá iría la foto/);
+  for(const project of publicProjects) {
+    assert.ok(projects.includes(project.work),'Conservar alcance confirmado');
+    if(!project.solution) assert.match(projects,/Acá iría la solución/);
+  }
+  assert.equal(await readFile(resolve(projectRoot,'content/lmr/proyectos.json'),'utf8'),projectSource,'La demo no escribe datos de ejemplo en el contenido real');
   assert.ok(!(await readdir(resolve(demoDirectory, 'assets'))).some(file => file.startsWith('pinero-')));
   const contact=await readFile(resolve(demoDirectory,'contacto/index.html'),'utf8');
   assert.match(contact,/data-endpoint="https:\/\/formsubmit\.co\/ajax\/infolmr@solution\.com\.ar"/);

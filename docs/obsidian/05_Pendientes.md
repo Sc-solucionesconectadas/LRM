@@ -1,5 +1,12 @@
 # Pendientes de LMR
 
+## Corrección21 — 2026-11-18
+
+- [x] Identificar diferencia real entre local y demo: flag projectPlaceholders desactivado al publicar.
+- [x] Habilitar estructura completa de fichas en la demo provisional, conservar fuente y bloqueo en producción definitiva.
+- [ ] Publicar y comparar seis fichas contra local, galerías y cierres en escritorio/móvil. [[21_Fichas_Completas_Demo]].
+- [ ] Reemplazar ejemplos por material autorizado del cliente; correo real sin probar/activar ahora.
+
 ## Publicación20 — 2026-11-18
 
 - [x] Autorización del usuario para publicar mejoras16–19 en la demo existente.

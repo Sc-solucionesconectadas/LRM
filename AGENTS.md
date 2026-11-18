@@ -1,5 +1,9 @@
 # LMR: repositorio independiente
 
+## Corrección21 de fichas en demo — 2026-11-18
+
+Leer docs/obsidian/21_Fichas_Completas_Demo.md. Usuario reclama los cambios de fichas que faltaban en la demo: la publicación20 excluía ejemplos y dejaba solo el alcance confirmado. Ahora build:demo activa projectPlaceholders:true para mostrar la misma estructura completa que el local, con textos/fotos de posición explícitos. Esto supera las restricciones históricas de ejemplos solo locales en19/20. Build normal/panel permanecen sin ejemplos; producción definitiva los rechaza. Noindex, material privado excluido y destino institucional conservados; sin correos/activaciones, DNS, cuentas, panel o ERP. Confirmar commit/build y seis fichas públicas antes de cerrar.
+
 ## Publicación20 verificada — 2026-11-18
 
 Mejoras16–19 publicadas en la demo existente: commit funcional de81c03, check Cloudflare completed/success, build4ccf918c-08a8-41b2-ae6c-96fa7b42cad4. Leer docs/obsidian/20_Publicacion_Mejoras_LMR.md.84 recursos y diez casos responsive correctos, seis popups/filtros/CTA verificados;39 pruebas/check/build. Se publica solo build:demo, sin ejemplos de revisión ni fuentes privadas, con noindex. Formulario dirigido a infolmr@solution.com.ar; cero envíos/activaciones, recepción sin validar. No tocar DNS, plan, dominio final, panel o ERP. Notas previas de «sin publicar» son históricas. Cierre documental en commit posterior; comprobar último check remoto.
@@ -27,7 +31,7 @@ Leer docs/obsidian/18_Hero_Servicios_Proyectos_y_Contacto.md: hero de Servicios,
 - Este repositorio es público. No versionar credenciales, .env.local, consultas del formulario, fotografías sin autorización, material marcado solo para revisión privada ni documentación comercial interna.
 - La demo pública es https://lmr-demo.scsolucionesconectadas.com.ar/. Worker lmr-demo, configuración deploy/lmr-demo/wrangler.jsonc. GitHub main está conectado a Cloudflare Builds: bc8ce28 produjo un despliegue correcto el02/11/2026 (versión8367edaa). Cada push autorizado requiere comprobar el check remoto y URL, no solo el commit.
 - Git usa un helper local con configuración aislada de GitHub CLI fuera del repo. La cuenta autorizada es Scsolucionesconectadas; no reemplazar la cuenta/configuración global de otros proyectos ni copiar secretos a Git.
-- Build de demo: npm run build:demo. Salida exclusiva .qa/cloudflare/lmr-demo, raíz /, noindex, sin sitemap/canonical definitivo, material previewOnly ni ejemplos de revisión. Desde etapa18, el formulario se prepara con destino institucional infolmr@solution.com.ar por pedido del usuario; construir no activa ni envía correo. No enviar pruebas/activaciones. La demo remota sigue con el estado del último deploy real.
+- Build de demo: npm run build:demo. Salida exclusiva .qa/cloudflare/lmr-demo, raíz /, noindex, sin sitemap/canonical definitivo ni material previewOnly. Desde corrección21 sí incluye ejemplos explícitos en las fichas de proyectos para revisar su estructura completa. Producción definitiva los rechaza. Formulario con destino institucional infolmr@solution.com.ar; construir no activa ni envía correo. No enviar pruebas/activaciones.
 - No activar producción/indexación/dominio del cliente ni enviar correos sin instrucción expresa. No prometer llegada a Recibidos.
 - Una modificación local no se publica hasta commit/push. El usuario autorizó la subida inicial y vinculación automática; para publicaciones posteriores respetar la instrucción vigente de cada tarea.
 - Ejecutar npm run check, npm test y npm run build:demo. Revisar Git diff y fuentes públicas antes de commit. No force-push. Comprobar despliegue real tras push autorizado.

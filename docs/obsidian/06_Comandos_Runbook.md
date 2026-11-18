@@ -1,5 +1,9 @@
 # Comandos y operación
 
+## Demo con fichas completas — 2026-11-18
+
+Desde [[21_Fichas_Completas_Demo]], `npm run build:demo` incluye los apartados pendientes y tres fotos de posición explícitas para mostrar la estructura al cliente. Se publica solo ese artefacto noindex y sin material previewOnly. `npm run dev` mantiene esa misma revisión local. Build normal/panel omiten ejemplos y producción definitiva rechaza activarlos. Las referencias a «demo sin ejemplos» de las secciones siguientes son históricas.
+
 ## Revisión visual de proyectos — 2026-11-18
 
 `npm run dev` genera con `--review` y sirve http://127.0.0.1:4174/lmr/. Completa visualmente campos/fotos ausentes sin cambiar contenido real. Si el servidor ya está abierto, ejecutar solo `node scripts/build.mjs --review` y recargar la pestaña. [[19_Revision_Visual_y_Maqueta_Proyectos]].

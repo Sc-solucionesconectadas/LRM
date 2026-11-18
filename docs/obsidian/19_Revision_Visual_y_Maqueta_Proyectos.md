@@ -1,5 +1,7 @@
 # Revisión visual y estructura completa de proyectos
 
+Actualización posterior: [[21_Fichas_Completas_Demo]] habilita también estos ejemplos explícitos en la demo provisional por pedido del usuario. Las restricciones de «solo local» de esta nota son históricas; producción definitiva conserva el bloqueo.
+
 Fecha: 2026-11-18. Trabajo local autorizado a partir de la revisión de la etapa18.
 
 ## Cambios visibles

@@ -23,7 +23,7 @@ export function getConfig(input = {}) {
   const includePreviewProjects = mode === 'preview' && input.includePreviewProjects !== false;
   if (input.projectPlaceholders !== undefined && typeof input.projectPlaceholders !== 'boolean') throw new Error('projectPlaceholders debe ser booleano.');
   const projectPlaceholders = input.projectPlaceholders === true;
-  if (mode === 'production' && projectPlaceholders) throw new Error('Los textos y fotos de posición solo se admiten en revisión local.');
+  if (mode === 'production' && projectPlaceholders) throw new Error('Los textos y fotos de posición solo se admiten en modo de revisión.');
   const prefix = input.deploymentPrefix ?? '';
   if (prefix && !/^\/(?:[a-z0-9-]+\/)*[a-z0-9-]+$/.test(prefix)) throw new Error('Prefijo de despliegue inválido');
   const basePath = prefix + sitePath;

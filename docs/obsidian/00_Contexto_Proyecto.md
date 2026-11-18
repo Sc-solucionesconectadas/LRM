@@ -1,5 +1,9 @@
 # Contexto de LMR
 
+## Corrección21 — 2026-11-18
+
+[[21_Fichas_Completas_Demo]]: la demo debe mostrar la estructura completa de las fichas, incluidos los ejemplos de información pendiente y tres fotos, igual que el local. La publicación20 los excluía por configuración. Se activa projectPlaceholders solo en demo preview; fuente real intacta, producción definitiva sin ejemplos y material privado excluido. Noindex/correo institucional conservados, sin envíos o cambios ajenos. Publicación/verificación por completar.
+
 ## Publicación20 verificada — 2026-11-18
 
 Mejoras16–19 publicadas: commit funcional de81c03, check Cloudflare completed/success y build4ccf918c-08a8-41b2-ae6c-96fa7b42cad4. [[20_Publicacion_Mejoras_LMR]] registra evidencia:84 recursos/diez casos responsive/seis fichas/menú/filtros/CTA correctos,39 pruebas y build. Noindex, raíz /, ejemplos solo locales y destino institucional conservados. Sin envíos/activaciones ni cambios de DNS/plan/dominio final/panel/ERP. Las secciones previas son antecedentes. Cierre documental sincronizado por separado sin cambios de interfaz.
