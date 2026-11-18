@@ -1,5 +1,9 @@
 # Bitácora de LMR
 
+## 2026-11-18 — Corrección21 de fichas públicas
+
+La demo20 ocultaba ejemplos al forzar projectPlaceholders:false; usuario necesitaba ver toda la estructura que aprobó en local. Se activa true solo en demo provisional, manteniendo fuente privada excluida y producción definitiva sin ejemplos. Commit296013b, build525ec2cf-c037-4f06-be2c-b89f9dc5cd89 success.39 pruebas/check/build,84 recursos y comparación de seis dossiers por hash iguales al local. Doce casos1440/390 de apartados/galería/cierres correctos. Cero correos;155 registros/cuatro borradores del panel conservados en refresco de hash. [[21_Fichas_Completas_Demo]] documenta causa y evidencia.
+
 ## 2026-11-18 — Publicación20 verificada
 
 Publicado el conjunto16–19 por pedido explícito. Commit funcional de81c03, build4ccf918c-08a8-41b2-ae6c-96fa7b42cad4, check completed/success.39 pruebas/check/build correctos;84 recursos y diez casos responsive, filtros, menú móvil, seis fichas y CTA de Contacto verificados en la demo pública. Ejemplos/material privado excluidos, noindex conservado; destino institucional configurado sin envíos/activaciones. Sin DNS, dominio final, panel o ERP. [[20_Publicacion_Mejoras_LMR]]; se sincroniza la documentación en un commit posterior sin cambios funcionales.

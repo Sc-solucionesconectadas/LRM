@@ -1,5 +1,9 @@
 # UI, UX y diseño
 
+## Corrección21 de fichas públicas — 2026-11-18
+
+La demo debe mostrar también los apartados pendientes y tres fotos de posición en cada popup, como el local. Se corrigió el flag del artefacto sin alterar diseño ni datos reales. Cinco apartados, galería manual y controles presentes en las seis fichas; comparación de HTML normalizado por hash6/6 y doce casos1440/390 sin desbordes. [[21_Fichas_Completas_Demo]]. Ejemplos explícitos solo para demo/revisión; producción definitiva sin ejemplos.
+
 ## Publicación20 — 2026-11-18
 
 Diseño16–19 ya publicado con autorización: hero/aire de Servicios, introducción por rubros, CTA destacado y seis fichas de proyectos. Diez casos públicos1440/390 sin overflow/errores; menú, filtros y cierres correctos. Ejemplos de texto/fotos permanecen locales; la web muestra solo datos confirmados. [[20_Publicacion_Mejoras_LMR]].

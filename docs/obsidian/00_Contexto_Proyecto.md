@@ -2,7 +2,7 @@
 
 ## Corrección21 — 2026-11-18
 
-[[21_Fichas_Completas_Demo]]: la demo debe mostrar la estructura completa de las fichas, incluidos los ejemplos de información pendiente y tres fotos, igual que el local. La publicación20 los excluía por configuración. Se activa projectPlaceholders solo en demo preview; fuente real intacta, producción definitiva sin ejemplos y material privado excluido. Noindex/correo institucional conservados, sin envíos o cambios ajenos. Publicación/verificación por completar.
+[[21_Fichas_Completas_Demo]] publicada: commit296013b, build525ec2cf-c037-4f06-be2c-b89f9dc5cd89 success. La demo muestra cinco apartados y tres fotos de posición en cada ficha, igual que el local (seis comparaciones de hash idénticas). Doce casos1440/390 y84 recursos correctos;39 pruebas/check/build. La publicación20 los excluía por configuración. projectPlaceholders se activa en demo preview; fuente real intacta, producción definitiva sin ejemplos y material privado excluido. Noindex/correo institucional conservados; cero envíos. Panel155 registros/cuatro borradores intactos tras refresco de hash. Cierre documental posterior sin cambios funcionales.
 
 ## Publicación20 verificada — 2026-11-18
 
@@ -53,6 +53,6 @@ Node.js >=22, módulos ECMAScript, HTML/CSS/JS nativos, Sharp 0.35.5 para imáge
 
 ## Límites vigentes
 
-Demo pública noindex, formulario configurado a infolmr@solution.com.ar desde publicación20. No enviar pruebas o activaciones; la recepción definitiva no fue comprobada. Material sin permiso de publicación y notas comerciales permanecen fuera del repo público, conservados en el proyecto previo. Ejemplos de textos/fotos solo locales con --review. No cambiar dominio/indexación del cliente por esta separación. No mezclar i-Solution o panel.
+Demo pública noindex, formulario configurado a infolmr@solution.com.ar desde publicación20. No enviar pruebas o activaciones; la recepción definitiva no fue comprobada. Material sin permiso de publicación y notas comerciales permanecen fuera del repo público, conservados en el proyecto previo. Desde corrección21, ejemplos explícitos de textos/fotos visibles tanto en demo provisional como local; producción definitiva sin ejemplos. No cambiar dominio/indexación del cliente por esta separación. No mezclar i-Solution o panel.
 
 [[05_Pendientes]] · [[02_Decisiones_Tecnicas]] · [[03_Bitacora_Desarrollo]] · [[13_Deploy_Infraestructura]].

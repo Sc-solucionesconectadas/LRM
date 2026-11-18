@@ -1,5 +1,9 @@
 # Publicación e infraestructura
 
+## 2026-11-18 — Corrección21 de fichas completas
+
+[[21_Fichas_Completas_Demo]]: commit296013bea677ae2f5f7c4382972c43901090fad1, build525ec2cf-c037-4f06-be2c-b89f9dc5cd89 completed/success, versión2c47ae4c-dc7f-467a-8456-0966f8a22a7d. Demo preview ahora incluye ejemplos explícitos de textos/fotos para mostrar toda la ficha igual al local; producción definitiva no los admite.84 recursos correctos y seis dossiers iguales por hash, doce casos responsive de fichas correctos. Noindex, exclusión de material privado y destino institucional conservados; cero envíos/activaciones. Cierre documental en commit posterior sin cambios de interfaz, comprobar su check.
+
 ## 2026-11-18 — Mejoras16–19 publicadas
 
 [[20_Publicacion_Mejoras_LMR]]: commit funcional de81c031cff917e50d0ae13d87f568f015d6ccf1, check GitHub Workers Builds completed/success, build4ccf918c-08a8-41b2-ae6c-96fa7b42cad4. URL https://lmr-demo.scsolucionesconectadas.com.ar/ confirmada:84 recursos/diez casos responsive y navegación/modales correctos. Fuente/flujo Git y Worker existentes sin cambios; sin tocar DNS/plan/dominio final. Formulario ahora dirigido al correo institucional por pedido previo; cero envíos/activaciones y recepción aún no validada. Noindex y exclusión de ejemplos/material privado conservados. Este estado supera las notas históricas de transporte vacío. Cierre documental en commit posterior, comprobar también su check.

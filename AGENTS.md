@@ -2,7 +2,7 @@
 
 ## Corrección21 de fichas en demo — 2026-11-18
 
-Leer docs/obsidian/21_Fichas_Completas_Demo.md. Usuario reclama los cambios de fichas que faltaban en la demo: la publicación20 excluía ejemplos y dejaba solo el alcance confirmado. Ahora build:demo activa projectPlaceholders:true para mostrar la misma estructura completa que el local, con textos/fotos de posición explícitos. Esto supera las restricciones históricas de ejemplos solo locales en19/20. Build normal/panel permanecen sin ejemplos; producción definitiva los rechaza. Noindex, material privado excluido y destino institucional conservados; sin correos/activaciones, DNS, cuentas, panel o ERP. Confirmar commit/build y seis fichas públicas antes de cerrar.
+Leer docs/obsidian/21_Fichas_Completas_Demo.md. Publicado commit funcional296013b, build525ec2cf-c037-4f06-be2c-b89f9dc5cd89 success. La publicación20 excluía ejemplos y dejaba solo el alcance confirmado; ahora build:demo activa projectPlaceholders:true para mostrar la misma estructura completa que el local. Seis dossiers idénticos por hash tras normalizar prefijo, cinco apartados/tres fotos, doce casos1440/390 correctos y84 recursos verificados.39 pruebas/check/build correctos. Esto supera restricciones históricas de ejemplos solo locales en19/20. Build normal/panel sin ejemplos y producción definitiva los rechaza. Noindex/material privado/destino institucional conservados; cero correos/activaciones, DNS/cuentas/ERP intactos. Panel155 registros/cuatro borradores conservados al refrescar hash. Cierre documental posterior sin cambios de interfaz; verificar último check.
 
 ## Publicación20 verificada — 2026-11-18
 
