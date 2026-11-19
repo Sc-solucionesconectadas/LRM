@@ -1,5 +1,9 @@
 # Adaptador editorial — 18/11/2026
 
+## Organización — 19/11/2026
+
+Usuario trasladó LRM y los otros cuatro repos a Sc-solucionesconectadas, organización con guion. origin local actualizado y workflow manual apunta al propietario/checkout nuevos. Demo continúa HTTP200 en el mismo dominio. App del panel verificada; instalación de CI/secretos y prueba completa pendientes en Solution-Group-Admin/docs/obsidian/28_Organizacion_GitHub_y_Asistente.md. Solo workflow/configuración documental; no cambiar contenido, formulario o publicar borradores del cliente.
+
 Preparado para el panel privado central, sin publicar borradores durante esta integración. shared/panel-media.mjs valida un inventario opcional content/lmr/panel-media.json, limita paths a recursos propios, comprueba tamaño/SHA y descarga solo archivos aprobados. prepare-lmr-demo conserva comportamiento previo sin inventario; si existe, agrega X-Solution-Revision para verificar el despliegue.
 
 El workflow editorial preparado es manual y requiere aprobación desde el panel. Revisión privada separada de publicación pública; sin artifacts/caches ni credenciales versionadas. Binarios nuevos llegan al build desde el almacén aprobado, sin copias sucesivas en Git.

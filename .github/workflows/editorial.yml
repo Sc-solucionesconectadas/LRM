@@ -16,7 +16,7 @@ concurrency:
   cancel-in-progress: false
 jobs:
   editorial:
-    if: github.repository_owner == 'Scsolucionesconectadas' && github.event_name == 'workflow_dispatch'
+    if: github.repository_owner == 'Sc-solucionesconectadas' && github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
@@ -25,12 +25,12 @@ jobs:
         with:
           client-id: ${{ secrets.SG_GITHUB_CLIENT_ID }}
           private-key: ${{ secrets.SG_GITHUB_PRIVATE_KEY }}
-          owner: Scsolucionesconectadas
+          owner: Sc-solucionesconectadas
           repositories: Solution-Group-Admin
           permission-contents: read
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
-          repository: Scsolucionesconectadas/Solution-Group-Admin
+          repository: Sc-solucionesconectadas/Solution-Group-Admin
           path: admin
           token: ${{ steps.app.outputs.token }}
           persist-credentials: false
