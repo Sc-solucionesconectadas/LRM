@@ -1,0 +1,56 @@
+name: Publicación editorial aprobada
+on:
+  workflow_dispatch:
+    inputs:
+      site:
+        type: choice
+        options: [lmr, isolution]
+        required: true
+      jobId:
+        type: string
+        required: true
+permissions:
+  contents: read
+concurrency:
+  group: editorial-${{ inputs.site }}
+  cancel-in-progress: false
+jobs:
+  editorial:
+    if: github.repository_owner == 'Scsolucionesconectadas' && github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/create-github-app-token@f418cff399f7aef4c2f0ad47e25ca7a6abbdd6fc # v3.4.0
+        id: app
+        with:
+          client-id: ${{ secrets.SG_GITHUB_CLIENT_ID }}
+          private-key: ${{ secrets.SG_GITHUB_PRIVATE_KEY }}
+          owner: Scsolucionesconectadas
+          repositories: Solution-Group-Admin
+          permission-contents: read
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          repository: Scsolucionesconectadas/Solution-Group-Admin
+          path: admin
+          token: ${{ steps.app.outputs.token }}
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: '24.22.2'
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: '3.13'
+      - run: npm ci --ignore-scripts --no-audit --no-fund
+        working-directory: admin
+      - run: python -m pip install --disable-pip-version-check -r admin/scripts/requirements-cloud.txt
+      - name: Generar y verificar la revisión
+        run: node admin/scripts/cloud-pipeline.mjs "$JOB_ID"
+        env:
+          JOB_ID: ${{ inputs.jobId }}
+          PANEL_PIPELINE_MODE: release
+          PIPELINE_KEY: ${{ secrets.SG_PIPELINE_KEY }}
+          GITHUB_APP_ID: ${{ secrets.SG_GITHUB_APP_ID }}
+          GITHUB_INSTALLATION_ID: ${{ secrets.SG_GITHUB_INSTALLATION_ID }}
+          GITHUB_APP_PRIVATE_KEY: ${{ secrets.SG_GITHUB_PRIVATE_KEY }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.SG_CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: aef2124170df6c6bcb9eb03995b3b580
