@@ -2,10 +2,12 @@ import { mkdir, readdir, readFile, writeFile } from 'node:fs/promises';
 import { resolve, join, relative } from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { build, projectRoot } from './build.mjs';
+import { prepareEditorialInput } from '../shared/panel-media.mjs';
 
 export const demoDirectory = resolve(projectRoot, '.qa/cloudflare/lmr-demo');
 
 export async function prepareLmrDemo() {
+  const editorial=await prepareEditorialInput(projectRoot,'lmr');
   // The client review includes missing-content slots, without private projects.
   // Building this artifact never sends or activates mail.
   const report = await build({
@@ -20,6 +22,7 @@ export async function prepareLmrDemo() {
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
   Cache-Control: no-cache
+${editorial?'  X-Solution-Revision: '+editorial.revision+'\n':''}
 `, 'utf8');
   await writeFile(join(demoDirectory, '404.html'), `<!doctype html>
 <html lang="es-AR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>Página no encontrada · LMR</title><link rel="icon" href="/assets/logo-240.webp"><link rel="stylesheet" href="/assets/site.css"></head>

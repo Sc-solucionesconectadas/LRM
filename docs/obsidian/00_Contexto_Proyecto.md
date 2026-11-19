@@ -1,5 +1,9 @@
 # Contexto de LMR
 
+## Integración editorial22 — 18/11/2026
+
+[[22_Integracion_Editorial_Cloud]] prepara descarga de medios aprobados/verificación de versión; sin inventario conserva demo actual.39 tests/check/build correctos. App/secretos y prueba CI del panel pendientes; sin publicación de borradores o correos.
+
 ## Corrección21 — 2026-11-18
 
 [[21_Fichas_Completas_Demo]] publicada: commit296013b, build525ec2cf-c037-4f06-be2c-b89f9dc5cd89 success. La demo muestra cinco apartados y tres fotos de posición en cada ficha, igual que el local (seis comparaciones de hash idénticas). Doce casos1440/390 y84 recursos correctos;39 pruebas/check/build. La publicación20 los excluía por configuración. projectPlaceholders se activa en demo preview; fuente real intacta, producción definitiva sin ejemplos y material privado excluido. Noindex/correo institucional conservados; cero envíos. Panel155 registros/cuatro borradores intactos tras refresco de hash. Cierre documental posterior sin cambios funcionales.
